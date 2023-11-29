@@ -126,7 +126,7 @@ h6 {
         width: 60%;
 }
 
-.nav_list {
+.nav__list {
         display: flex;
         column-gap: 74px;
         align-items: center;
@@ -148,7 +148,7 @@ h6 {
 
 }
 
-.nav__btn__link {
+.nav__btnlink {
         color: var(--white);
         font-family: 'Nunito', sans-serif;
         font-size: 18px;
@@ -161,7 +161,7 @@ h6 {
         transition: all linear .3s;
 }
 
-.nav__btn__link:hover {
+.nav__btnlink:hover {
         background: #6A55EA;
         border: 1px solid #6A55EA;
 }
@@ -190,7 +190,7 @@ h6 {
 
 }
 
-.banner__btn__item {
+.banner__btn-item {
         color: var(--white);
         opacity: 0.6;
         text-align: center;
@@ -255,35 +255,35 @@ h6 {
         padding: 0 30px;
 }
 
-.banner__shapeOne {
+.banner__shape01 {
         position: absolute;
         left: 0;
         bottom: 0;
         z-index: 999;
 }
 
-.banner__shapeTwo {
+.banner__shape02 {
         position: absolute;
         left: 0;
         bottom: 0;
         z-index: 99;
 }
 
-.banner__shapeThree {
+.banner__shape03 {
         position: absolute;
         left: 0;
         bottom: 0;
         z-index: 9;
 }
 
-.banner__shapeOne img,
-.banner__shapeTwo img,
-.banner__shapeThree img {
+.banner__shape01 img,
+.banner__shape02 img,
+.banner__shape03 img {
         width: 100%;
         display: block;
 }
 
-.banner__shapeFour {
+.banner__shape04 {
         position: absolute;
         bottom: 14%;
         right: 0;
@@ -338,7 +338,6 @@ h6 {
         padding-top: 60px;
         display: flex;
         column-gap: 32px;
-        /* align-items: ; */
 }
 
 .service__img {
@@ -417,10 +416,54 @@ h6 {
  ================================ */
 
 /* ==============================
-         Common Part Start
+         Traffic Part Start
  ================================ */
+#traffic{
+        padding: 80px 0 97px;
+}
+ .traffic__wrapper{
+        display: flex;
+        column-gap: 110px;
+        align-items: center;
+ }
+
+.traffic__content{
+        width: 596px;
+}
+
+.traffic__heading h2 {
+        padding-top: 10px;
+}
+
+.paragraph--Amend {
+      
+        color: var(--primary_clr);
+        text-align: start;
+        padding: 24px 0 40px;
+}
+
+.traffic_shape{
+        display: flex;
+        column-gap: 60px;
+        align-items: center;
+}
+
+.traffic__img{
+        width: 704px;
+        height: 441px;
+        overflow: hidden;
+        margin-top: 32px;
+}
+
+.traffic__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+}
+
 /* ==============================
-         Common Part End
+         Traffic Part End
  ================================ */
 
 /* ==============================
