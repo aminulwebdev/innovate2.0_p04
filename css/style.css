@@ -43,6 +43,33 @@ h6 {
         margin: 0 auto;
 }
 
+.heading {
+        color: var(--primary_clr);
+        font-family: 'Poppins', sans-serif;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+}
+
+.sub_heading {
+        color: var(--primary_clr);
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+}
+
+.title {
+        color: var(--secondary_clr);
+        font-family: 'Nunito', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: capitalize;
+}
+
 .paragraph {
         color: var(--white);
         text-align: center;
@@ -218,7 +245,6 @@ h6 {
         outline: none;
         text-transform: capitalize;
         color: var(--primary_clr);
-        padding-right: 210px;
 }
 
 .commonbtn--modify {
@@ -254,6 +280,7 @@ h6 {
 .banner__shapeTwo img,
 .banner__shapeThree img {
         width: 100%;
+        display: block;
 }
 
 .banner__shapeFour {
@@ -268,17 +295,125 @@ h6 {
  ================================ */
 
 /* ==============================
-         Common Part Start
+         Company Part Start
  ================================ */
+#company {
+        position: relative;
+        margin-top: -190px;
+        z-index: 1000;
+}
+
+.company__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 110px;
+        row-gap: 50px;
+        flex-wrap: wrap;
+}
+
 /* ==============================
-         Common Part End
+         Company Part End
  ================================ */
 
 /* ==============================
-         Common Part Start
+         Service Part Start
  ================================ */
+#service {
+        padding: 100px 0;
+}
+
+.service__heading h4 {
+        text-align: center;
+}
+
+.service__heading h2 {
+        text-align: center;
+        width: 676px;
+        margin: 0 auto;
+        padding-top: 10px;
+}
+
+.service__wrapper {
+        padding-top: 60px;
+        display: flex;
+        column-gap: 32px;
+        /* align-items: ; */
+}
+
+.service__img {
+        width: 688px;
+}
+
+.paragraph--modify {
+        text-align: start;
+        color: var(--primary_clr);
+        padding-bottom: 80px;
+}
+
+.service__img__item {
+        width: 100%;
+        height: 403px;
+        overflow: hidden;
+}
+
+.service__img__item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.service__content {
+        width: 690px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 36px;
+}
+
+.service__item {
+        background-color: #F0EDFF;
+        padding: 36px 120px 36px 36px;
+        display: flex;
+        column-gap: 40px;
+        align-items: center;
+        border-radius: 20px;
+}
+
+.service__item:nth-child(2) {
+        background: rgba(254, 246, 236, 0.8);
+}
+
+.service__item:nth-child(2) .service__item__img {
+        background: #F8A64C;
+}
+
+.service__item:nth-child(3) {
+        background: rgba(232, 252, 242, 0.7);
+}
+
+.service__item:nth-child(3) .service__item__img {
+        background: #63DE9D;
+}
+
+.service__item__img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: var(--secondary_clr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.paragraph--info {
+        color: var(--primary_clr);
+        width: 374px;
+        text-align: start;
+        margin-top: 12px;
+}
+
 /* ==============================
-         Common Part End
+         Service Part End
  ================================ */
 
 /* ==============================
