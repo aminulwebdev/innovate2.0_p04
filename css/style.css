@@ -418,16 +418,17 @@ h6 {
 /* ==============================
          Traffic Part Start
  ================================ */
-#traffic{
+#traffic {
         padding: 80px 0 97px;
 }
- .traffic__wrapper{
+
+.traffic__wrapper {
         display: flex;
         column-gap: 110px;
         align-items: center;
- }
+}
 
-.traffic__content{
+.traffic__content {
         width: 596px;
 }
 
@@ -436,36 +437,191 @@ h6 {
 }
 
 .paragraph--Amend {
-      
+
         color: var(--primary_clr);
         text-align: start;
         padding: 24px 0 40px;
 }
 
-.traffic_shape{
+.traffic_shape {
         display: flex;
         column-gap: 60px;
         align-items: center;
 }
 
-.traffic__img{
+.traffic__img {
         width: 704px;
         height: 441px;
         overflow: hidden;
         margin-top: 32px;
 }
 
-.traffic__img img{
+.traffic__img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-    
+
 }
 
 /* ==============================
          Traffic Part End
  ================================ */
 
+/* ==============================
+         Help Part Start
+ ================================ */
+#help {
+        padding: 120px 0 110px;
+}
+
+.help_heading h4 {
+        text-align: center;
+}
+
+.help_heading h2 {
+        width: 456px;
+        margin: 0 auto;
+        padding-top: 14px;
+
+}
+
+.help__item__wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        padding: 60px 0 100px;
+}
+
+.help_item {
+        width: 330px;
+        background: #F8A64C;
+        border-radius: 14px;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+        cursor: pointer;
+        transition: all linear .3s;
+        position: relative;
+}
+
+.help_item::after {
+        position: absolute;
+        content: "";
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 50px;
+        height: 50px;
+        background: #6A55EA;
+        z-index: -99;
+        visibility: hidden;
+        opacity: 0;
+        transition: all linear .3s;
+}
+
+.help_item:nth-child(2) {
+        background: #F0EDFF;
+}
+
+.help_item:nth-child(3) {
+        background: rgba(232, 252, 242);
+}
+
+.help_item:nth-child(4) {
+        background: #FEF6EC;
+}
+
+.help_item:hover {
+        background: #6A55EA;
+        color: #FDFDFD;
+}
+
+.help_item:hover::after {
+        bottom: -23px;
+        visibility: visible;
+        opacity: 1;
+}
+
+.help_item h4 {
+        color: var(--primary_clr);
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 140%;
+        text-transform: capitalize;
+        transition: all linear .3s;
+}
+
+.help_item:hover h4 {
+        color: #FDFDFD;
+}
+
+
+.help__content_wrapper {
+        display: flex;
+        gap: 130px;
+}
+
+.help_img {
+        width: 480px;
+        height: 340px;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+}
+
+.help_img img {
+        width: 340px;
+        height: 100%;
+}
+
+.help_info {
+        width: 800px;
+}
+
+.help_info h3 {
+        color: var(--primary_clr);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+}
+
+.paragraph--tweak {
+        color: var(--primary_clr);
+        text-align: start;
+        padding: 24px 0 48px;
+}
+
+.commonbtn--tweak {
+        border-radius: 20px;
+        transition: all linear .3s;
+        border: 1px solid transparent;
+}
+
+.commonbtn--tweak:hover {
+        background-color: transparent;
+        color: var(--primary_clr);
+        border: 1px solid var(--primary_clr);
+}
+
+/* ==============================
+         Help Part End
+ ================================ */
+
+
+
+/* ==============================
+         Common Part Start
+ ================================ */
+/* ==============================
+         Common Part End
+ ================================ */
 /* ==============================
          Common Part Start
  ================================ */
