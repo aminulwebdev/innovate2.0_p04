@@ -43,6 +43,31 @@ h6 {
         margin: 0 auto;
 }
 
+.paragraph {
+        color: var(--white);
+        text-align: center;
+        font-family: Nunito;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 200%;
+        text-transform: capitalize;
+}
+
+.commonbtn {
+        color: var(--white);
+        background: #6A55EA;
+        font-family: 'Nunito', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: capitalize;
+        padding: 30px;
+        border: none;
+        cursor: pointer;
+}
+
+
+
 /* ==============================
          Common Part End
  ================================ */
@@ -53,7 +78,11 @@ h6 {
  ================================ */
 #nav {
         padding: 32px 0;
-        background-color: #6A55EA;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
 }
 
 .nav__wrapper {
@@ -92,7 +121,7 @@ h6 {
 
 }
 
-.nav__btn--link {
+.nav__btn__link {
         color: var(--white);
         font-family: 'Nunito', sans-serif;
         font-size: 18px;
@@ -105,7 +134,7 @@ h6 {
         transition: all linear .3s;
 }
 
-.nav__btn--link:hover {
+.nav__btn__link:hover {
         background: #6A55EA;
         border: 1px solid #6A55EA;
 }
@@ -117,6 +146,123 @@ h6 {
 /* ==============================
          Banner Part Start
  ================================ */
+#banner {
+        padding: 192px 0 700px;
+        background: url(../images/banner.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+}
+
+.banner__btn {
+        display: flex;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+}
+
+.banner__btn__item {
+        color: var(--white);
+        opacity: 0.6;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 100%;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border: 1px solid var(--white);
+        border-radius: 10px;
+}
+
+.banner__heading {
+        width: 967px;
+        margin: 0 auto;
+        color: var(--white);
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 130%;
+        text-transform: capitalize;
+        padding: 30px 0 20px;
+}
+
+.banner__paragraph {
+        width: 780px;
+        margin: 0 auto;
+        opacity: 0.6;
+        /* padding: 20px 0 48px; */
+}
+
+.banner__form {
+        width: 638px;
+        margin: 0 auto;
+}
+
+.banner__form_group {
+        margin-top: 48px;
+        background-color: var(--white);
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+}
+
+.banner__form_input {
+        padding: 30px;
+        border-radius: 20px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-transform: capitalize;
+        color: var(--primary_clr);
+        padding-right: 210px;
+}
+
+.commonbtn--modify {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 30px;
+}
+
+.banner__shapeOne {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+}
+
+.banner__shapeTwo {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 99;
+}
+
+.banner__shapeThree {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+}
+
+.banner__shapeOne img,
+.banner__shapeTwo img,
+.banner__shapeThree img {
+        width: 100%;
+}
+
+.banner__shapeFour {
+        position: absolute;
+        bottom: 14%;
+        right: 0;
+        z-index: 998;
+}
+
 /* ==============================
          Banner Part End
  ================================ */
