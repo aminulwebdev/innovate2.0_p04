@@ -619,9 +619,58 @@ h6 {
 /* ==============================
          Common Part Start
  ================================ */
+#studies {
+        padding: 120px 0;
+}
+
+.studies_heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.heading--padding {
+        padding-top: 14px;
+}
+
+.studies__wrapper{
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        padding-top: 60px;
+}
+
+.studies_img{
+        width: 450px;
+        height: 326px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #29313D;
+}
+.studies_img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+
+.studies_item h3 {
+        padding: 24px 0 14px;
+}
+
+.paragraph--alter {
+        text-align: start;
+        color: var(--primary_clr);
+        width: 446px;
+}
+
 /* ==============================
          Common Part End
  ================================ */
+
+
+
+
 /* ==============================
          Common Part Start
  ================================ */
