@@ -16,10 +16,7 @@ font-family: 'Poppins', sans-serif;  */
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-
 }
-
-
 
 a {
         text-decoration: none;
@@ -83,8 +80,6 @@ h6 {
         text-transform: capitalize;
 }
 
-
-
 .commonbtn {
         color: var(--white);
         font-family: 'Nunito', sans-serif;
@@ -103,12 +98,9 @@ h6 {
         border: 1px solid #6A55EA;
 }
 
-
-
 /* ==============================
          Common Part End
  ================================ */
-
 
 /* ==============================
          Navbar Part Start
@@ -150,15 +142,30 @@ h6 {
         font-weight: 600;
         line-height: normal;
         text-transform: capitalize;
+        position: relative;
+}
+
+.nav__link::after {
+        position: absolute;
+        content: "";
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 3px;
+        background-color: var(--secondary_clr);
+        border-radius: 5px;
+        transition: all linear .3s;
+}
+
+.nav__link:hover::after {
+        width: 60%;
 }
 
 .nav__btn {
         width: 20%;
         text-align: right;
-
 }
-
-
 
 /* ==============================
          Navbar Part End
@@ -263,7 +270,6 @@ h6 {
         cursor: pointer;
 }
 
-
 .banner__shape01 {
         position: absolute;
         left: 0;
@@ -303,7 +309,6 @@ h6 {
 }
 
 @keyframes moveUpDownShape3 {
-
         0% {
                 transform: translateY(0);
         }
@@ -431,8 +436,6 @@ h6 {
         cursor: pointer;
 }
 
-
-
 .service__item:hover {
         background: rgba(254, 246, 236, 0.8);
 
@@ -448,17 +451,14 @@ h6 {
 
 }
 
-
 .service__item:nth-child(2) {
         background: rgba(254, 246, 236, 0.8);
         transition: all linear .3s;
 }
 
-
 .service__item:nth-child(2) .service__item__img {
         background: #F8A64C;
 }
-
 
 .service__item:nth-child(2):hover {
         background-color: #F0EDFF;
@@ -470,11 +470,8 @@ h6 {
 }
 
 .service__item:nth-child(2):hover .sub__heading--color {
-      color: var(--secondary_clr);
+        color: var(--secondary_clr);
 }
-
-
-
 
 .service__item:nth-child(3) {
         background: rgba(232, 252, 242, 0.7);
@@ -494,10 +491,8 @@ h6 {
 }
 
 .service__item:nth-child(3):hover .sub__heading--color {
-      color: var(--secondary_clr);
+        color: var(--secondary_clr);
 }
-
-
 
 .service__item__img {
         width: 120px;
@@ -509,7 +504,6 @@ h6 {
         align-items: center;
         transition: all linear .3s;
 }
-
 
 .paragraph--info {
         color: var(--primary_clr);
@@ -543,12 +537,12 @@ h6 {
         padding-top: 10px;
 }
 
-.paragraph--Amend {
+.paragraph--amend {
         color: var(--primary_clr);
         padding: 24px 0 40px;
 }
 
-.traffic_shape {
+.traffic__shape {
         display: flex;
         column-gap: 60px;
         align-items: center;
@@ -565,7 +559,6 @@ h6 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-
 }
 
 /* ==============================
@@ -579,15 +572,14 @@ h6 {
         padding: 120px 0 110px;
 }
 
-.help_heading h4 {
+.help__heading h4 {
         text-align: center;
 }
 
-.help_heading h2 {
+.help__heading h2 {
         width: 456px;
         margin: 0 auto;
         padding-top: 14px;
-
 }
 
 .help__item__wrapper {
@@ -597,7 +589,7 @@ h6 {
         padding: 60px 0 100px;
 }
 
-.help_item {
+.help__item {
         width: 330px;
         background: #F8A64C;
         border-radius: 14px;
@@ -612,7 +604,7 @@ h6 {
         position: relative;
 }
 
-.help_item::after {
+.help__item::after {
         position: absolute;
         content: "";
         bottom: -18px;
@@ -627,30 +619,30 @@ h6 {
         transition: all linear .3s;
 }
 
-.help_item:nth-child(2) {
+.help__item:nth-child(2) {
         background: #F0EDFF;
 }
 
-.help_item:nth-child(3) {
+.help__item:nth-child(3) {
         background: rgba(232, 252, 242);
 }
 
-.help_item:nth-child(4) {
+.help__item:nth-child(4) {
         background: #FEF6EC;
 }
 
-.help_item:hover {
+.help__item:hover {
         background: #6A55EA;
         color: #FDFDFD;
 }
 
-.help_item:hover::after {
+.help__item:hover::after {
         bottom: -23px;
         visibility: visible;
         opacity: 1;
 }
 
-.help_item h4 {
+.help__item h4 {
         color: var(--primary_clr);
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -661,17 +653,16 @@ h6 {
         transition: all linear .3s;
 }
 
-.help_item:hover h4 {
+.help__item:hover h4 {
         color: #FDFDFD;
 }
 
-
-.help__content_wrapper {
+.help__content__wrapper {
         display: flex;
         gap: 130px;
 }
 
-.help_img {
+.help__img {
         width: 480px;
         height: 340px;
         overflow: hidden;
@@ -679,16 +670,16 @@ h6 {
         justify-content: flex-end;
 }
 
-.help_img img {
+.help__img img {
         width: 340px;
         height: 100%;
 }
 
-.help_info {
+.help__info {
         width: 800px;
 }
 
-.help_info h3 {
+.help__info h3 {
         color: var(--primary_clr);
         font-family: 'Open Sans', sans-serif;
         font-size: 36px;
@@ -717,16 +708,14 @@ h6 {
          Help Part End
  ================================ */
 
-
-
 /* ==============================
-         Common Part Start
+         Studies Part Start
  ================================ */
 #studies {
         padding: 120px 0;
 }
 
-.studies_heading {
+.studies__heading {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -755,7 +744,6 @@ h6 {
         color: var(--secondary_clr);
 }
 
-
 .studies__img img {
         width: 100%;
         height: 100%;
@@ -767,14 +755,10 @@ h6 {
         transform: scale(1.1);
 }
 
-
-
 .studies__item h3 {
         padding: 24px 0 14px;
         transition: all linear .3s;
 }
-
-
 
 .paragraph--alter {
         color: var(--primary_clr);
@@ -782,11 +766,32 @@ h6 {
 }
 
 /* ==============================
-         Common Part End
+         Studies Part End
  ================================ */
 
+/* ==============================
+         Plans Part End
+ ================================ */
+#plans {
+        padding: 120px 0;
+}
 
+.plans__heading {
+        text-align: center;
+        padding-bottom: 60px;
+}
 
+.heading--padding {
+        padding-top: 14px;
+}
+
+.plans__wrapper {
+        text-align: center;
+}
+
+/* ==============================
+         Plans Part End
+ ================================ */
 
 /* ==============================
          Analytics Part Start
@@ -795,30 +800,27 @@ h6 {
         padding-bottom: 120px;
 }
 
-.analytics_wrapper {
+.analytics__wrapper {
         position: relative;
-
 }
 
-.analytics_img {
+.analytics__img {
         width: 1410px;
         height: 500px;
         overflow: hidden;
         border-radius: 70px;
-
 }
 
-.analytics_img img {
+.analytics__img img {
         width: 100%;
         height: 100%;
 }
 
-.analytics_content {
+.analytics__content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
 }
 
 .analytics__heading {
@@ -827,26 +829,27 @@ h6 {
 }
 
 .analytics__paragraph {
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
         width: 635px;
         margin: 0 auto;
         padding: 10px 0 28px;
         opacity: 0.6;
 }
 
-
 .analytics__form {
         width: 638px;
         margin: 0 auto;
 }
 
-.analytics__form_group {
+.analytics__form__group {
         background-color: var(--white);
         border-radius: 20px;
         overflow: hidden;
         position: relative;
 }
 
-.analytics__form_input {
+.analytics__form__input {
         padding: 30px;
         border-radius: 20px;
         width: 100%;
@@ -895,7 +898,6 @@ footer {
         padding-top: 44px;
 }
 
-
 .footer__list__wrapper {
         display: flex;
         column-gap: 180px;
@@ -910,7 +912,6 @@ footer {
         line-height: 140%;
         text-transform: capitalize;
 }
-
 
 .footer__list {
         display: flex;
@@ -936,8 +937,6 @@ footer {
         padding-top: 80px;
 }
 
-
-
 .footer__policy {
         display: flex;
         align-items: center;
@@ -946,14 +945,4 @@ footer {
 
 /* ==============================
          Footer Part End
- ================================ */
-
-
-
-
-/* ==============================
-         Common Part Start
- ================================ */
-/* ==============================
-         Common Part End
  ================================ */
