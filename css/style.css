@@ -16,7 +16,10 @@ font-family: 'Poppins', sans-serif;  */
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+
 }
+
+
 
 a {
         text-decoration: none;
@@ -52,13 +55,14 @@ h6 {
         text-transform: capitalize;
 }
 
-.sub_heading {
+.sub__heading {
         color: var(--primary_clr);
         font-family: 'Poppins', sans-serif;
         font-size: 28px;
         font-weight: 600;
         line-height: 140%;
         text-transform: capitalize;
+        transition: all linear .3s;
 }
 
 .title {
@@ -71,9 +75,8 @@ h6 {
 }
 
 .paragraph {
-        color: var(--white);
-        text-align: center;
-        font-family: Nunito;
+        color: var(--primary_clr);
+        font-family: 'Nunito', sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 200%;
@@ -165,12 +168,13 @@ h6 {
          Banner Part Start
  ================================ */
 #banner {
-        padding: 192px 0 800px;
+        padding: 192px 0 700px;
         background: url(../images/banner.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        overflow: hidden;
 }
 
 .banner__btn {
@@ -181,7 +185,7 @@ h6 {
 
 }
 
-.banner__btn-item {
+.banner__btn__item {
         color: var(--white);
         opacity: 0.6;
         text-align: center;
@@ -210,9 +214,10 @@ h6 {
 
 .banner__paragraph {
         width: 780px;
+        color: var(--white);
         margin: 0 auto;
         opacity: 0.6;
-        /* padding: 20px 0 48px; */
+        text-align: center;
 }
 
 .banner__form {
@@ -221,15 +226,16 @@ h6 {
         z-index: 999;
 }
 
-.banner__form_group {
+.banner__form__group {
         margin-top: 48px;
         background-color: var(--white);
         border-radius: 20px;
         overflow: hidden;
         position: relative;
+        z-index: 1000;
 }
 
-.banner__form_input {
+.banner__form__input {
         padding: 30px;
         border-radius: 20px;
         width: 100%;
@@ -263,6 +269,7 @@ h6 {
         left: 0;
         bottom: 0;
         z-index: 999;
+        width: 100%;
 }
 
 .banner__shape02 {
@@ -270,6 +277,20 @@ h6 {
         left: 0;
         bottom: 0;
         z-index: 99;
+        width: 100%;
+        animation: moveUpDownShape2 4s ease-in-out infinite;
+}
+
+@keyframes moveUpDownShape2 {
+
+        0%,
+        100% {
+                transform: translateY(0);
+        }
+
+        50% {
+                transform: translateY(15px);
+        }
 }
 
 .banner__shape03 {
@@ -277,6 +298,19 @@ h6 {
         left: 0;
         bottom: 0;
         z-index: 9;
+        width: 100%;
+        animation: moveUpDownShape3 4s ease-in-out infinite;
+}
+
+@keyframes moveUpDownShape3 {
+
+        0% {
+                transform: translateY(0);
+        }
+
+        50% {
+                transform: translateY(-15px);
+        }
 }
 
 .banner__shape01 img,
@@ -288,9 +322,24 @@ h6 {
 
 .banner__shape04 {
         position: absolute;
-        bottom: 14%;
+        bottom: 12%;
         right: 0;
         z-index: 998;
+        animation: moveRocket 5s ease-in-out infinite;
+}
+
+@keyframes moveRocket {
+        0% {
+                transform: translateY(0) translateX(0);
+        }
+
+        50% {
+                transform: translateY(-30px) translateX(10px);
+        }
+
+        100% {
+                transform: translateY(0) translateX(0);
+        }
 }
 
 /* ==============================
@@ -348,7 +397,6 @@ h6 {
 }
 
 .paragraph--modify {
-        text-align: start;
         color: var(--primary_clr);
         padding-bottom: 80px;
 }
@@ -379,15 +427,54 @@ h6 {
         column-gap: 40px;
         align-items: center;
         border-radius: 20px;
+        transition: all linear .3s;
+        cursor: pointer;
 }
+
+
+
+.service__item:hover {
+        background: rgba(254, 246, 236, 0.8);
+
+}
+
+.service__item:hover .service__item__img {
+        background: #F8A64C;
+
+}
+
+.service__item:hover .sub__heading--color {
+        color: #F8A64C;
+
+}
+
 
 .service__item:nth-child(2) {
         background: rgba(254, 246, 236, 0.8);
+        transition: all linear .3s;
 }
+
 
 .service__item:nth-child(2) .service__item__img {
         background: #F8A64C;
 }
+
+
+.service__item:nth-child(2):hover {
+        background-color: #F0EDFF;
+}
+
+.service__item:nth-child(2):hover .service__item__img {
+        background: var(--secondary_clr);
+
+}
+
+.service__item:nth-child(2):hover .sub__heading--color {
+      color: var(--secondary_clr);
+}
+
+
+
 
 .service__item:nth-child(3) {
         background: rgba(232, 252, 242, 0.7);
@@ -397,6 +484,21 @@ h6 {
         background: #63DE9D;
 }
 
+.service__item:nth-child(3):hover {
+        background-color: #F0EDFF;
+}
+
+.service__item:nth-child(3):hover .service__item__img {
+        background: var(--secondary_clr);
+
+}
+
+.service__item:nth-child(3):hover .sub__heading--color {
+      color: var(--secondary_clr);
+}
+
+
+
 .service__item__img {
         width: 120px;
         height: 120px;
@@ -405,7 +507,9 @@ h6 {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all linear .3s;
 }
+
 
 .paragraph--info {
         color: var(--primary_clr);
@@ -440,9 +544,7 @@ h6 {
 }
 
 .paragraph--Amend {
-
         color: var(--primary_clr);
-        text-align: start;
         padding: 24px 0 40px;
 }
 
@@ -597,7 +699,6 @@ h6 {
 
 .paragraph--tweak {
         color: var(--primary_clr);
-        text-align: start;
         padding: 24px 0 48px;
 }
 
@@ -642,27 +743,40 @@ h6 {
         padding-top: 60px;
 }
 
-.studies_img {
+.studies__img {
         width: 450px;
         height: 326px;
         border-radius: 20px;
         overflow: hidden;
-        background-color: #29313D;
+        cursor: pointer;
 }
 
-.studies_img img {
+.studies__img:hover+h3 {
+        color: var(--secondary_clr);
+}
+
+
+.studies__img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: all linear .3s;
+}
+
+.studies__img img:hover {
+        transform: scale(1.1);
 }
 
 
-.studies_item h3 {
+
+.studies__item h3 {
         padding: 24px 0 14px;
+        transition: all linear .3s;
 }
+
+
 
 .paragraph--alter {
-        text-align: start;
         color: var(--primary_clr);
         width: 446px;
 }
@@ -683,7 +797,7 @@ h6 {
 
 .analytics_wrapper {
         position: relative;
-      
+
 }
 
 .analytics_img {
@@ -704,17 +818,17 @@ h6 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-     
+
 }
 
-.analytics__heading{
+.analytics__heading {
         color: var(--white);
         text-align: center;
 }
 
-.analytics__paragraph{
-        width: 635px;     
-        margin: 0 auto;  
+.analytics__paragraph {
+        width: 635px;
+        margin: 0 auto;
         padding: 10px 0 28px;
         opacity: 0.6;
 }
@@ -765,11 +879,77 @@ h6 {
  ================================ */
 
 /* ==============================
-         Common Part Start
+         Footer Part Start
  ================================ */
+footer {
+        padding: 140px 0 57px;
+}
+
+.footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+}
+
+.paragraph--enhance {
+        width: 449px;
+        padding-top: 44px;
+}
+
+
+.footer__list__wrapper {
+        display: flex;
+        column-gap: 180px;
+}
+
+.footer__content h5 {
+        color: var(--primary_clr);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+}
+
+
+.footer__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding-top: 48px;
+}
+
+.footer__item {
+        color: var(--primary_clr);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        text-transform: capitalize;
+}
+
+.footer__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 80px;
+}
+
+
+
+.footer__policy {
+        display: flex;
+        align-items: center;
+        column-gap: 60px;
+}
+
 /* ==============================
-         Common Part End
+         Footer Part End
  ================================ */
+
+
+
 
 /* ==============================
          Common Part Start
