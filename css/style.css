@@ -725,6 +725,17 @@ h6 {
         padding-top: 14px;
 }
 
+.commonbtn--option {
+        border-radius: 20px;
+        transition: all linear .3s;
+        border: 1px solid var(--primary_clr);
+        color: #29313D;
+}
+
+.commonbtn--option:hover {
+        color: var(--white);
+}
+
 .studies__wrapper {
         display: flex;
         column-gap: 30px;
